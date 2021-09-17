@@ -1,0 +1,59 @@
+body {  
+    color: rgb(0, 0, 0);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #acc3dd;
+    text-align: center;
+}
+
+table{  
+    width: 900px;
+    background-color: rgb(187, 187, 187);
+    text-align: left;
+    border-collapse: collapse;
+}
+
+#contenedor{  
+    width: 800px;  
+    margin: 150px auto;
+    border: transparent;
+}
+
+fieldset
+{
+    width: 800px;
+    margin-bottom: 12px;
+    background-color: #0c1158;  
+    text-align: center;
+    color: white;
+    text-decoration-style: initial;
+    border-radius: 20px;
+    border: transparent;
+}
+
+legend{
+    background-color:rgb(108, 119, 131);
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+
+th, td{
+    padding: 20px;  
+}
+
+thead{
+    background-color: #0c1158;
+    border-bottom: solid 5px black;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+    
+}
+
+tr:hover td{
+    background-color: rgb(142, 157, 243);
+    color: white;
+}
