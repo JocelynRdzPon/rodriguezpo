@@ -1,0 +1,339 @@
+<!DOCTYPE html> 
+<html>
+   <head> 
+      <meta charset="UTF-8">  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Etiquetas para la creacion de formularios</title>  
+      <link rel="stylesheet" type="text/css" href="eqtiquetas_formulario.css">  
+   </head>
+   <body>
+       <h1>ETIQUETAS PARA FORMULARIOS HTML</h1>
+       <h4>Jocelyn Rodriguez Ponce               18100229</h4>
+
+    <div id ="contenedor">
+      <h2><br>Etiquetas para formularios en HTML </br></h2> 
+      <fieldset>
+         <legend>¿Que es un formulario?</legend>
+         <p>Los formularios son los elementos en los que se integran los botones y las áreas de texto 
+             que se utilizan para que los usuarios introduzcan sus datos o que puedan elegir entre 
+             varias opciones. Veamos las etiquetas que se utilizan para la creación de formularios en HTML5.</p>
+      </fieldset>
+
+
+  
+      <table border= "0">  
+         <caption> Etiquetas para la creación de formularios </caption>  
+        <thead>
+         <tr>  
+            <th>Elemento      </th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+            <th>Visualizacion</th>
+    
+         </tr>
+          
+        </thead>
+       
+         <tr>
+            <td> <h4>< form > </h4></td>
+             <td>  
+                 la etiqueta < form > para indicar al navegador que el elemento será un formulario.
+                 < form > se emplea para cualquier tipo de formulario HTML, ya sea uno de contacto, 
+                 suscripción, registro, login, encuesta, etc. 
+             </td>
+           <td>
+               <ol>
+                   <li <for> </li>
+                   <li>…Aquí irán los campos del formulario...</li>
+                   <li>< / form ></li>
+               </ol>
+           </td>
+           <td>  
+            <form > 
+            …Aquí irán los campos del formulario...
+            </form >
+        </td>
+         </tr>
+
+         <tr>
+            <td> <h4>< fieldset> </h4>    </td>
+            <td>Permite organizar en grupos los campos de un formulario.</td>
+            <td> 
+                <ol>  
+                <li>< fieldset> </li>
+                <li>< legend > Formulario</legend ></li>
+                <li>< p>Los formularios son los elementos.< /p> </li> 
+                <li>< /fieldset> </li>
+                </ol>  
+            </td>
+            <td>
+                Un ejemplo de fieldset es el recuadro que contiene el concepto de <br>Formulario
+            </td>
+         </tr>
+         <tr>
+            <td> <h4>< legend> </h4></td>
+            <td>Representa el título de un < fieldset >.</td>
+            <td>
+                <ol>  
+                    <li>< fieldset> </li>
+                    <li>< legend > Formulario</legend ></li>
+                    <li>< p>Los formularios son los elementos.< /p> </li> 
+                    <li>< /fieldset> </li>
+                </ol> 
+            </td>
+            <td>
+                Dentro del fieldset se encuentra el ejemplo de Legend, el cual es el titulo del fieldset
+            </td>
+         </tr>
+         <tr>
+            <td> <h4>< label></h4></td>
+            <td>Representa el título de un elemento de control de un formulario.</td>
+            <td>
+                <ol>
+                 <li>< label for="nombre">  Nombre < /label> </li>
+                 <li>< br/> < input type="text" id="nombre" name="nombre" value="" /></li>
+                </ol>
+            </td>
+   
+            <td>
+                <label for="nombre">Nombre</label> 
+                <br/> <input type="text" id="nombre" name="nombre" value="" />
+            </td>
+         </tr>
+
+         <tr>
+            <td> <h4>< input></h4></td>
+            <td>Se usa para crear controles interactivos que reciben datos del usuario</td>
+            <td>
+                <ol>
+                   <li>< form> </li> 
+                    <li>Tu nombre: < input/></li>
+                    <li>Tu apellido: < input/> </li>
+                    <li>< /form></li>
+                </ol>               
+            </td>
+            <td>
+                <form> 
+                    Tu nombre: <input/> 
+                    Tu apellido: <input/> 
+                  </form>
+            </td>
+         </tr>
+
+         <tr>
+            <td> <h4>< button></h4></td>
+            <td>Representa un botón.</td>
+            <td>
+            <ol>  
+                <li>< button type="button"></button></li>
+                <li> Click Me!</li>
+                <li>< /button></li>
+            </ol>   
+            </td>
+            <td><button type="button">Click Me!</button></td>
+         </tr>
+         <tr>
+            <td><h4>< option></h4> </td>
+            <td>Representa una opción en un elemento < select > o < datalist >.
+                Se utiliza la etiqueta < option > dentro de la etiqueta < select >.   < option > contiene una opción del desplegable y podemos implementar la cantidad de opciones que deseemos.
+            </td> 
+            <td> 
+                <ol>
+                    <li>
+                        ELIGE UN COLOR:< select>
+                    </li>
+                    <li>
+                        < option>Blanco</ option>
+                    </li>
+                    <li>
+                        < option>Negro</ option>
+                    </li>
+                    <li>
+                        < option>Azul</ option>
+                    </li>
+                    <li>
+                        < option>Rojo</ option>
+                    </li>
+                    <li>
+                        < option>Verde</ option>
+                    </li>
+                    <li> </ select>
+                        
+                    </li>
+                </ol>
+            </td> 
+            <td>
+                <form>
+
+                    ELIGE UN COLOR:<select>
+                    <option>Blanco</option>
+                    <option>Negro</option>
+                    <option>Azul</option>
+                    <option>Rojo</option>
+                    <option>Verde</option>
+                    </select>
+                    
+                    </form>
+            </td>
+         </tr>
+         <tr>
+            <td><h4>< select> </h4></td>
+            <td>Representa un elemento de control que permite la selección entre un conjunto de opciones < option >.
+                Se utilizara  la etiqueta < select > para crear un campo desplegable, este tipo de campos en HTML permiten seleccionar una opción del desplegable y además son muy útiles 
+                en esas ocasiones en las que buscamos buena presentación de espacio en el formulario.
+             </td>
+            <td>  
+                <ol>
+                   <li>< label for="carros">Selecciona una carro< /label> </li> 
+                    <li>< select name="carros" id="carros"></li>
+                    <li>< option value="volvo">Volvo< /option></li>
+                      <li> <  option value="saab">Saab</ option></li>
+                     <li>< option value="mercedes">Mercedes</ option></li>
+                     <li> < option value="audi">Audi</ option></li>
+                    <li></ select></li>
+                </ol>
+    
+            </td>
+             <td>
+                <label for="carros">Selecciona una carro</label>
+                <select name="carros" id="carros">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+             </td>
+         </tr>
+         <tr>
+             <td> <h4>< optgroup> </h4>  </td>
+             <td> Representa un conjunto de opciones, agrupadas lógicamente. <option>.</td>
+             <td>
+                 <ol>
+                   <li> < label for="cars">Selecciona un carro:<  /label></li> 
+                   <li>< select  name="cars" id="cars"></li> 
+                      <li>< optgroup label="Swedish Cars"></li>
+                        <li>< option value="volvo">Volvo< /option></li>
+                        <li>< option value="saab">Saab< /option></li>
+                      <li>< /optgroup></li>
+                     <li>< optgroup label="German Cars"></li> 
+                        <li>< option value="mercedes">Mercedes< /option></li>
+                        <li>< option value="audi">Audi< /option></li>
+                      <li>< /optgroup></li>
+                    <li>< /select></li>
+
+                 </ol>
+               
+             </td>
+             <td>
+                <label for="cars">Selecciona un carro:</label>
+                <select  name="cars" id="cars">
+                  <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                  </optgroup>
+                  <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </optgroup>
+                </select>
+
+            </td>
+         </tr>
+
+         <tr>
+            <td><h4>< datalist><</h4> </td>
+            <td>Representa un elemento de control que permite la selección entre un conjunto de opciones < option>.</td>
+           <td>
+               <ol>  
+                   <br>
+                 <li> < label>Selecciona tu país:</ label></li>
+                 <li>< input type="text" name="pais" id="pais" list="paises"/></li>
+                 <li>< datalist id="paises"></li>
+                 <li> < option value="España" /></li> 
+                 <li>< option value="México" /></li> 
+                 <li> < option value="Argentina" /></li>
+                 <li>< option value="Perú" /></li> 
+                 <li>< option value="Colombia" /></li> 
+                 <li> < option value="Otro país" /> </li> 
+                 <li> < /datalist> </li>  
+               </br>
+
+               </ol>
+           </td>
+            <td>
+                <label>Selecciona tu país:</label>
+                <input type="text" name="pais" id="pais" list="paises"/>
+                <datalist id="paises">
+                <option value="España" />
+                <option value="México" />
+                <option value="Argentina" />
+                <option value="Perú" />
+                <option value="Colombia" />
+                <option value="Otro país" /> 
+                </datalist></td>
+         </tr>
+
+         <tr>
+            <td><h4>< textarea></h4></td>
+            <td>Representa un elemento de control de edición de texto multilínea. </td>
+            <td>
+                <ol>
+                    <li>< label for="Ejemplo">Ejemplo:< /label></li>
+
+                    <li>< textarea id="Ejemplo" name="Ejemplo" rows="4" cols="50">
+                        At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                        < /textarea>  
+                    </li>
+                </ol>
+               
+            </td>
+            <td>
+                <label for="Ejemplo">Ejemplo:</label>
+
+                <textarea id="Ejemplo" name="Ejemplo" rows="2" cols="8">
+                At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+                </textarea>
+            </td>
+         </tr>
+
+         <tr>
+            <td><h4>< output></h4> </td>
+            <td>Representa el resultado de un cálculo. </td>  
+            <td> 
+                <ol>  
+                   <li>< form onsubmit="return false" oninput="res.value =parseInt(op1.value) * parseInt(op2.value)"></ form></li> 
+                   <li>< input name="op1" type="number" step="any"> x</li> 
+                   <li>< input name="op2" type="number" step="any"> =</li>
+                   <li>< output name="res" for “op1 op2”>< /output></li> 
+                   <li>< /form></li>
+                </ol>
+                    
+            </td>
+            <td>
+                <form onsubmit="return false" oninput="res.value =parseInt(op1.value) * parseInt(op2.value)">
+                <input name="op1" type="number" step="any"> x
+                <input name="op2" type="number" step="any"> =
+                <output name="res" for “op1 op2”></output>
+                </form>
+        </td>
+         </tr>
+
+
+      </table>
+      
+   
+    </div>  
+
+    <h3>Bibliografía</h3>
+    <ol>
+     <li value=1> https://www.eniun.com/etiquetas-formularios-html5/</li>
+     <li>https://desarrolladoresweb.org/html/formularios-en-html/</li>
+     <li>https://www.htmlquick.com/es/tutorials/forms.html</li>
+     <li>https://www.lawebera.es/diseno-web-html-5/etiquetas-html5-formularios-inputs.php</li>
+     <li>https://www.w3schools.com/TAgs/tag_label.asp</li>
+     <li>https://developer.mozilla.org/es/docs/Web/HTML/Element/fieldset</li>
+    </ol>
+</body>
+</html>
+
