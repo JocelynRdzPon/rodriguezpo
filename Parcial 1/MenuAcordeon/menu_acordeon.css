@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    place-items: center;
+
+    
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(https://image.freepik.com/vector-gratis/fondo-formas-flujo-colorido-abstracto_91008-272.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+ul{
+    list-style: none;
+    width: 900px;
+    height: 300px; 
+}
+
+ul> li> ul{
+    display: none;   
+}
+
+ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+
+.opcion1{
+    background: rgb(83, 195, 223);
+    color: rgb(255, 255, 255);
+    height: fit-content;
+    border-style: solid;
+    border-bottom-width: thin;
+    border-color: rgb(183, 230, 241);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.opcion2{
+    background: rgb(133, 218, 240);
+    color: rgb(255, 255, 255);
+    height: fit-content;
+    border-style: solid;
+    border-bottom-width: thin;
+    border-color: rgb(172, 236, 255);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.opcion3{
+    background: rgb(175, 238, 255);
+    color: rgb(255, 255, 255);
+    height: fit-content;
+    border-style: solid;
+    border-bottom-width: thin;
+    border-color: rgb(197, 241, 252);
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+.subOpcion1 {
+    background: rgb(151, 217, 233);
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+    text-align: justify; 
+}
+
+.subOpcion2 {
+    background: rgb(174, 229, 255);
+    color: rgb(48, 46, 46);
+    font-size: 16px;
+    text-align: justify; 
+}
+
+.subOpcion3 {
+    background: rgb(174, 229, 255);
+    color: rgb(48, 46, 46);
+    font-size: 16px;
+    text-align: justify; 
+}
+
+img{
+    size: 5cm;
+}
+
+
