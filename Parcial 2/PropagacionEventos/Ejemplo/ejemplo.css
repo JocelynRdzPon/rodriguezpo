@@ -1,0 +1,25 @@
+div {
+    border-width: 4px;
+    border-style: solid;
+    padding: 40px;
+  }
+  
+  .abuela {
+    border-color: orange;
+    background: gold;
+  }
+  
+  .mama {
+    border-color: blueviolet;
+    background-color: mediumpurple
+  }
+  
+  .hija {
+    border-color: seagreen;
+    background-color: yellowgreen;
+  }
+  
+  .dark {
+    border-color: black;
+    background-color: grey;
+  }

@@ -1,0 +1,66 @@
+div{
+    align-content: center;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    text-align: center;
+    align-content: center;
+    background: center;
+}
+
+fieldset
+{
+    width: 90%;
+    margin-bottom: 5px;
+    background-color: #0e030b;  
+    text-align: center;
+    color: white;
+    text-decoration-style: initial;
+    border-radius: 10px;
+    border: transparent;
+    align-content: center;
+}
+legend{
+    background-color:rgb(122, 6, 97);
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+table{  
+    width: 90%;
+    background-color: rgb(187, 187, 187);
+    text-align: initial;
+    border-collapse: collapse;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+th, td{
+    padding: 10px;  
+}
+
+thead{
+    background-color: #080007;
+    border-bottom: solid 5px rgb(53, 4, 42);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+caption{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li{
+    text-align: initial;
+    font-size: 18px;
+}
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html>
+   <head> 
+      <meta charset="UTF-8">  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Ejemplo event bubbling </title>  
+      <link rel="stylesheet" type="text/css" href="ejemplo.css">  
+      
+   </head>
+ <body>
+    <div class="abuela">
+        <div class="mama">
+          <div class="hija">
+            
+          </div>
+        </div>
+      </div>
+
+      <script>
+        const abuela = document.querySelector('.abuela');
+        const mama = document.querySelector('.mama');
+        const hija = document.querySelector('.hija');
+
+        abuela.addEventListener('click', (e) => {
+        e.currentTarget.classList.toggle('dark');
+        });
+
+        hija.addEventListener('click', (e) => {
+        e.currentTarget.classList.toggle('dark');
+        });
+  </script>
+ </body>
+</html>

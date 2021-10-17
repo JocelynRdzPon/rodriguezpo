@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html>
+   <head> 
+      <meta charset="UTF-8">  
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Historial Académico Jocelyn </title>  
+      <link rel="stylesheet" type="text/css" href="defincion.css">  
+   </head>
+
+<body>
+    <div align=center>
+        <a href="https://www.fontspace.com/category/thick"><img src="https://see.fontimg.com/api/renderfont4/04no/eyJyIjoiZnMiLCJoIjo3MSwidyI6MTAwMCwiZnMiOjcxLCJmZ2MiOiIjMjkwMjI2IiwiYmdjIjoiI0ZGRkFGQSIsInQiOjF9/UHJvcGFnYWNpw7NuIGRlIGV2ZW50b3M/digitalt.png" alt="Thick fonts"></a>
+    </div>
+    <br> <br><br>
+    <div class="contenedor">
+        <fieldset>
+            <legend>Definicion</legend>
+            <p>
+               Los eventos se propagarán en <b>orden ascendente</b>  desde le elemento en el 
+               que se hace clic, que es el de menor jerarquía, hasta sus padres, que son los de mayor jerarquía. <br>
+               <br> Cada vez que sucede un evento sobre un elemento de HTML, este 'burbujea' hacia arriba. Esto quiere decir que el evento sucede en ese elemento, y después en el elemento padre, y después en el abuelo, y así hasta llegar al último ancestro, html.
+               Aunque no lo vemos, esto está sucediendo continuamente en el navegador, por ejemplo cada vez que movemos el ratón, o hacemos click en cualquier sitio. este comportamiento hace que:
+               podamos 'escuchar' un evento en un elemento, sin que esto implique que se haya iniciado en él podamos poner <b>listeners </b>  con <b> handlers</b> en varios padres y que todos se ejecuten si sucede un evento en un hijo común
+            </p>
+        </fieldset>
+    </div>
+    <br><br><br>
+
+    <table border= "0">  
+        <caption> <b>Ejemplo</b> </caption>  
+        <br><br><br>
+       <thead>
+        <tr>  
+           <th>HTML</th>
+           <th>CSS</th>
+           <th>JS</th>
+        </tr>
+         
+       </thead>
+          <tr>
+            <td>
+               <pre>
+                   <code>
+&lt div class="abuela">
+    &ltdiv class="mama">
+        &ltdiv class="hija">
+                            
+        &lt/div>
+    &lt/div>
+&lt/div>
+                   </code>
+               </pre>
+              </td>
+             <td>
+                 <pre>
+                     <code>
+div {
+   border-width: 4px;
+   border-style: solid;
+   padding: 40px;
+}
+                                
+.abuela {
+    border-color: orange;
+    background: gold;
+}
+                                
+.mama {
+    border-color: blueviolet;
+    background-color: mediumpurple
+}
+                                
+.hija {
+    border-color: seagreen;
+    background-color: yellowgreen;
+    }
+                                
+.dark {
+    border-color: black;
+    background-color: grey;
+}
+                     </code>
+                 </pre>
+             <td>
+                 <pre>
+                     <code>
+    const abuela = document.querySelector('.grandma');
+    const mama = document.querySelector('.mama');
+    const hija = document.querySelector('.daughter');
+                        
+    abuela.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('dark');
+    });
+                        
+    hija.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('dark');
+    });
+                        
+                     </code>
+                 </pre>
+             </td>
+          </tr>         
+</table>
+<br>
+<br>
+<br>
+<div>
+    <fieldset></fieldset>
+    <a href="Ejemplo/ejemplo.html">Ejemplo</a>.
+    <fieldset></fieldset>
+    <br><br>
+    <fieldset></fieldset>
+    En la siguiente liga se muestra un ejemplo de como funciona el <b>Event bubbling</b> 
+    <fieldset></fieldset>
+</div>
+
+<br><br><br>
+
+<div>
+    <p>
+       <b>Bibliografia</b> 
+       <li>https://www.neoguias.com/diferencia-event-bubbling-event-capturing/</li> 
+       <li>https://john-florez.gitbook.io/fundamentosjs-virtual/eventos</li>
+       <li>https://john-florez.gitbook.io/fundamentosjs-virtual/eventos</li> 
+       <li>https://codepen.io/adalab/pen/MPjyyW</li> 
+       <li>https://foroayuda.es/burbujeo-y-captura-de-eventos-en-el-ejemplo-de-codigo-javascript/</li>
+       <li>https://www.kuworking.com/blog/javascript-que-es-event-bubbling</li>
+        
+    </p>
+</div>
+
+
+</body>
+
+</html>
