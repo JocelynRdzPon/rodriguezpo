@@ -11,6 +11,6 @@ $(document).ready( function() {
     }
     
     function llegadaDatos(datos) {
-        $('#resultado').html('<h3>La temperatura en Celcius es '+datos+' °C</h3>');
+        $('#resultado').html('<h3>La temperatura en Celsius es '+datos+' °C</h3>');
     }
     });
