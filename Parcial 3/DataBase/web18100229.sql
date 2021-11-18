@@ -1,5 +1,5 @@
-CREATE DATABASE N18100229;
-USE N18100229;
+CREATE DATABASE web18100229;
+USE web18100229;
 -- MySql
 CREATE TABLE usuario(
  id_usuario VARCHAR(45) NOT NULL,
@@ -23,13 +23,13 @@ CREATE TABLE usuario(
  PRIMARY KEY(id_pedido),
  CONSTRAINT fK_pedido_usuario FOREIGN KEY (id_usuario) REFERENCES usuario(id_usuario)
  );
- use N18100229;
+ use web18100229;
 
-insert into usuario values('U01','santiagodo@gmail.com','12345');
-insert into usuario values('U02','anasofia@gmail.com','12345');
-insert into usuario values('U03','guillehuerta@gmail.com','12345');
-insert into usuario values('U04','susanagonzal@gmail.com','12345');
-insert into usuario values('U05','danifuentes@gmail.com','12345');
+insert into usuario values('U01','santiago','12345');
+insert into usuario values('U02','anasofia','12345');
+insert into usuario values('U03','guillermo','12345');
+insert into usuario values('U04','susana','12345');
+insert into usuario values('U05','daniela','12345');
 
 
 insert into pedido values('P01','U01','Santiago','Dominguez Sanchez','867123456','Canales #3450 Buenavista 88000','2021-11-15','15:30:30','Vainilla','Mermelada de fresa','Mantequilla','10-15'); 
