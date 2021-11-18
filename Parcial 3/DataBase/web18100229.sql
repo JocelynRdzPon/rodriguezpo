@@ -3,7 +3,7 @@ USE web18100229;
 -- MySql
 CREATE TABLE usuario(
  id_usuario VARCHAR(45) NOT NULL,
- correo VARCHAR(45) NOT NULL,
+ nombre VARCHAR(45) NOT NULL,
  contraseña VARCHAR(45) NOT NULL,
  PRIMARY KEY(id_usuario)
  );
