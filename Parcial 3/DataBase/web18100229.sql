@@ -25,18 +25,16 @@ CREATE TABLE usuario(
  );
  use web18100229;
 
-insert into usuario values('U01','santiago','12345');
-insert into usuario values('U02','anasofia','12345');
-insert into usuario values('U03','guillermo','12345');
-insert into usuario values('U04','susana','12345');
-insert into usuario values('U05','daniela','12345');
+insert into usuario values('U01','admin','12345');
+insert into usuario values('U02','cajera','12345');
+
 
 
 insert into pedido values('P01','U01','Santiago','Dominguez Sanchez','867123456','Canales #3450 Buenavista 88000','2021-11-15','15:30:30','Vainilla','Mermelada de fresa','Mantequilla','10-15'); 
-insert into pedido values('P02','U02','Ana Sofia','Ramirez Lopez','867234987','Llano #1670 Los Encinos 8800','2021-11-15','09:00:00','Fresa','Nutella','Mantequilla','5-6'); 
-insert into pedido values('P03','U03','Guillermo','Huerta Diaz','867789345','Adelfa #1230 Los Encinos 88000','2021-11-16','10:45:00','Chocolate','Cajeta','Chocolate','15-20'); 
-insert into pedido values('P04','U04','Susana','Gonzales Rodriguez','867321654','Tampico #7890 Las Torres 88000','2021-11-16','12:00:00','Vainilla','Cajeta','Queso crema','5-6'); 
-insert into pedido values('P05','U05','Daniela','Fuentes Rios','8671298176','Venustiano Carranza #8970 Concordia 88000','2021-11-17','8:00:00','Chocolate','Mermelada de fresa','Mantequilla','8-10'); 
+insert into pedido values('P02','U01','Ana Sofia','Ramirez Lopez','867234987','Llano #1670 Los Encinos 8800','2021-11-15','09:00:00','Fresa','Nutella','Mantequilla','5-6'); 
+insert into pedido values('P03','U01','Guillermo','Huerta Diaz','867789345','Adelfa #1230 Los Encinos 88000','2021-11-16','10:45:00','Chocolate','Cajeta','Chocolate','15-20'); 
+insert into pedido values('P04','U02','Susana','Gonzales Rodriguez','867321654','Tampico #7890 Las Torres 88000','2021-11-16','12:00:00','Vainilla','Cajeta','Queso crema','5-6'); 
+insert into pedido values('P05','U02','Daniela','Fuentes Rios','8671298176','Venustiano Carranza #8970 Concordia 88000','2021-11-17','8:00:00','Chocolate','Mermelada de fresa','Mantequilla','8-10'); 
 
 select * from usuario;
 select * from pedido;
