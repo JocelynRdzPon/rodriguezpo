@@ -7,7 +7,7 @@ try {
        $query->execute();
 
         while ($row = $query->fetch()) {
-            echo $row['idUsuario'].'-'.
+            echo $row['id_usuario'].'-'.
                  $row['nombre'].'-'.
                  $row['contraseña'].'<br>';
         }
@@ -24,8 +24,8 @@ try {
     $query->execute();
 
      while ($row = $query->fetch()) {
-         echo $row['idpedido'].'-'.
-              $row['idusuario'].'-'.
+         echo $row['id_pedido'].'-'.
+              $row['id_usuario'].'-'.
               $row['nombrecliente'].'-'.
               $row['apellidoscliente'].'-'.
               $row['telefono'].'-'.
