@@ -3,7 +3,7 @@ include "conectar.php";
 
 
 try {
-    $queryStr="select * pedidos";
+    $queryStr="select * from pedido";
     $query=$con->prepare($queryStr);
     $query->execute();
 
