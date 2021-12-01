@@ -2,6 +2,10 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #e79dc2;
+    align-items: center;
+    text-align: center;
+    
+
 }
 
 
@@ -41,5 +45,25 @@ body {
 .form-signin input[type="password"] {
     border-top-left-radius: 16;
     border-top-right-radius: 16;
+    
+}
+
+button{
+    margin:auto;
+    display: inline-block;
+    text-align:center;
+    border-radius: 80px;
+}
+
+fieldset{
+    background-color: #db89b2;
+    width: 30%;
+    margin-bottom: 20px; 
+    text-decoration-style: initial;
+    border-radius: 70px;
+    border: transparent;
+    margin:auto;
+    display: inline-block;
+    text-align:center;
 }
 

@@ -30,14 +30,14 @@ if ( !isset($_SESSION['login']) || empty($_SESSION['login']) ) {
 
         <!-- Modal de Confirmación -->
         <div class="modal fade" id="modalSalida" role="dialog">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xs">
         <div class="modal-content">
-            <div class="modal-header modal-header-primary">
+            <div class="modal-header modal-header-danger">
                 <button type="button" class="close" data-dismiss="modal">X</button>
-                <h2 class="modal-title text-center">Confirmación</h2>
+                <h2 class="modal-title text-center">Cerrar sesión</h2>
             </div>
             <div class="modal-body text-center">
-                <h3>Desea salir del Sistema?</h3>
+                <h3>¿Desea salir del sistema de la pasteleria?</h3>
             </div>
             <div class="modal-footer">
                <a href="./php/logout.php" class="btn btn-default">Si</a>
@@ -47,30 +47,14 @@ if ( !isset($_SESSION['login']) || empty($_SESSION['login']) ) {
         </div>
         </div>
 
-
-        <div id="contenedorConte">
-            <div class="container-fluid">
                 <div class="row encabezado">
-                     <div class="col-xs-6 col-sm-12 enca2">
-                         <button type="button" class="btn btn-default btn-lg" id="botonUsuario"><?php echo $_SESSION['login'];?><i class="fa fa-user"></i></button>
-                         <button type="button" class="btn btn-danger btn-lg" id="botonSalir">Salir<i class="fa fa-sign-out"></i></button>
+                     <div class="col-xs-6 col-sm-3 enca2">
+                         <button type="button" class="btn btn-info btn-lg" id="botonUsuario"><?php echo $_SESSION['login'];?><i class="fa fa-user"></i></button>
+                         <button type="button" class="btn btn-dark btn-lg" id="botonSalir">Salir<i class="fa fa-sign-out"></i></button>
                      </div>
                 </div>
-
+<!--FORMULARIO-->
 <form class="form">
-
-<div class="row">
-      <div class="form-group col-xs-6">
-      <button id="b_limpiar"  type="button" class="btn btn-warning">Limpiar</button>
-      <button id="b_nuevo"    type="button" class="btn btn-warning">Nuevo</button>
-      <button id="b_grabar"   type="button" class="btn btn-warning" disabled>Grabar</button>
-      <button id="b_eliminar" type="button" class="btn btn-warning" disabled>Eliminar</button>
-</div>
-<div class="form-group col-xs-6 ui-widget">
-      <label for="buscar">Buscar</label>
-      <input id="buscar">
-</div>
-</div>
 <div align= center>
         <br> <a href="https://www.fontspace.com/category/cursive"><img src="https://see.fontimg.com/api/renderfont4/rg3Wp/eyJyIjoiZnMiLCJoIjo5NSwidyI6MTAwMCwiZnMiOjk1LCJmZ2MiOiIjMUQxQjFCIiwiYmdjIjoiI0ZGRkFGQSIsInQiOjF9/RmljaGEgZGUgY290aXphY2nDs24/denalova.png" alt="Cursive fonts"></a>
         <br> <a href="https://www.fontspace.com/category/basic"><img src="https://see.fontimg.com/api/renderfont4/onJB/eyJyIjoiZnMiLCJoIjoxOSwidyI6MTAwMCwiZnMiOjE5LCJmZ2MiOiIjMUQxQjFCIiwiYmdjIjoiI0ZGRkFGQSIsInQiOjF9/UEFTVEVMRVJJQQ/isle-body-personal-use-medium.png" alt="Basic fonts"></a>
@@ -168,9 +152,10 @@ if ( !isset($_SESSION['login']) || empty($_SESSION['login']) ) {
                     </div>            
                       <br>
                       <br>
-                      <br>          
+                      <br> 
+        <!--Botones-->
                       <div align= center class="row">
-                            <div class="form-group col-md-12">
+                            <div class="form-group col-xl-8">
                             <button id="b_limpiar"    type="button" class="btn btn-info">Limpiar</button>
                             <button id="b_eliminar"   type="button" class="btn btn-danger">Eliminar</button>
                             <button id="b_enviar"     type="button" class="btn btn-primary">Enviar</button>
