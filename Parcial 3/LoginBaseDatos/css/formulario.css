@@ -1,0 +1,30 @@
+fieldset
+{
+    width: 100%;
+    margin-bottom: 12px;
+    background-color: rgba(255, 238, 244, 0.945);  
+    text-decoration-style: initial;
+    border-bottom: transparent;
+    border: transparent;
+}
+
+
+@media  screen and (max-width: 600px) 
+    {
+     .col{
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    p{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+
