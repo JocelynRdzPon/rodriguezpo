@@ -28,7 +28,6 @@ if ( !isset($_SESSION['nombre']) || empty($_SESSION['nombre']) ) {
 <body>
     <div id="contenedorPrin" class="toggled">
 
-        <!-- Modal de Confirmación -->
         <div class="modal fade" id="modalSalida" role="dialog">
         <div class="modal-dialog modal-xs">
         <div class="modal-content">

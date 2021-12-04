@@ -35,8 +35,8 @@ if ($link->connect_error) {
 
 			$row['resultado']  = '0';
 			$row['informacion']= 'Informacion correcta';
-			$row['mensaje']    = 'Correcto';
-			$row['detalle']    = 'Bienvenido'.$registro['nombre'];
+			$row['mensaje']    = 'Inicio de sesion correcto';
+			$row['detalle']    = 'Bienvenido';
 
             session_start();
             $_SESSION['id_usuario']=$registro['id_usuario'];
@@ -45,7 +45,7 @@ if ($link->connect_error) {
     } else  {
         $row['resultado']  = '1';
         $row['informacion']= 'Informacion incorrecta';
-        $row['mensaje']    = 'Incorrecto';
+        $row['mensaje']    = 'Inicio de sesion incorrecto';
         $row['detalle']    = 'Usuario o contraseña incorrecto';
     }
 
